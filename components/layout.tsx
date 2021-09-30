@@ -4,6 +4,8 @@ import Image from 'next/image';
 import styles from '../styles/layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import SvgIdeoConceptsLogo from "./logos/ideoconcepts-logo";
+import SvgMeteryxLogo from "./logos/meteryx-logo";
 
 const name = "Pier-Olivier";
 export const siteTitle = "Next.js Sample Website";
@@ -67,6 +69,8 @@ export default function Layout({ children, home }: PropsWithChildren<{ home: boo
                     <Link href="/">
                         <a>← Back to home</a>
                     </Link>
+                    <SvgIdeoConceptsLogo width={100} color="#000" />
+                    <SvgMeteryxLogo width={200} color="#000" />
                 </div>
             )}
         </div>

@@ -1,0 +1,27 @@
+:root {
+  --meteryx-main: #394E59;
+  --meteryx-highlight: #00537F;
+  --meteryx-gradient: linear-gradient(180deg, #00537F 0%, #2C2E4F 253.3%);
+  --placeholder-color: #D9DADE;
+  --status-ok: #7CD668;
+  --status-error: #DC4B43;
+  --bg-default: #FFFFFF;
+  --bg-secondary: #F7F7F7;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

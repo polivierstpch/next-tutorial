@@ -8,14 +8,14 @@ import Link from 'next/link';
 const name = "Pier-Olivier";
 export const siteTitle = "Next.js Sample Website";
 
-export default function Layout({ children, home }: PropsWithChildren<{ home: boolean }> ){
+export default function Layout({ children, home }: PropsWithChildren<{ home: boolean }>) {
     return (
         <div className={styles.container}>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <meta
                     name="description"
-                    content="Learn how to build a personal website using Next.js" 
+                    content="Learn how to build a personal website using Next.js"
                 />
                 <meta
                     property="og:image"

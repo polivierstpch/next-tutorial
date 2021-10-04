@@ -4,11 +4,11 @@
     background-color: white;
     justify-content: space-between;
     color: var(--meteryx-highlight);
-    padding: 1.5rem 10rem;
+    padding: 1.5rem 5rem;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
 }
 
 .logo {
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +44,7 @@
     margin-right: 0;
 }
 
-.nav a:hover {
+.nav a:hover, .nav a:active {
     transform: scale(1.1);
 }
 
@@ -52,30 +52,52 @@
     display: none;
 }
 
-@media screen and (max-width: 1200px) {
-    .header {
-        padding: 1.5rem 5rem;
-    }
-}
 
 @media screen and (max-width: 915px) {
     .header {
-        padding: 1rem 5rem;
+        padding: 1rem 2.5rem;
     }
     .logo svg {
-        width: 12rem;
+        width: 10rem;
     }
     .logo span {
         display: none;
     }
+}
+
+@media screen and (max-width: 600px) {
+    
     .nav {
-        display: none;
-    }
-    .nav.active {
+        position: absolute;
+        top: 4.7rem;
+        right: 0;
+        left: 0;
+        bottom: 70vh;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform-origin: top;
+        transform: scaleY(0);
+        overflow: hidden;
     }
+    .nav a {
+        padding: 0.5rem 0;
+        margin: 0;
+    }
+
+    .nav.active {
+        box-shadow: inset 0px 2px 5px rgba(0,0,0,0.15);
+        background-color: white;
+        padding: 1rem 2rem;
+        width: 100vw;
+        transform: scaleY(1);
+        transition: transform 0.2s;
+    }
+   
     .hamburger {
         display: block;
+        width: 2.5rem;
     }
 }
+
